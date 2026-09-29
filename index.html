@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#7B0079" />
+    <meta name="description" content="Kandela, una guía práctica de convivencia y entrenamiento canino basada en el ebook de SmartDogs." />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/icon-600.png" />
+    <link rel="apple-touch-icon" href="assets/icon-600.png" />
+    <link rel="stylesheet" href="styles.css?v=2" />
+    <title>Kandela | SmartDogs</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <div id="app" class="app-shell">
+      <header class="topbar">
+        <button class="brand" data-action="home" aria-label="Ir al inicio">
+          <span class="brand-mark">K</span>
+          <span><strong>Kandela</strong><small>por SmartDogs</small></span>
+        </button>
+        <button class="profile-button" data-action="profile" aria-label="Editar perfil del perro">
+          <span id="profileInitial">?</span>
+        </button>
+      </header>
+
+      <main id="main" tabindex="-1"></main>
+
+      <nav class="bottom-nav" aria-label="Navegación principal">
+        <button data-view="home" class="active"><span aria-hidden="true">⌂</span>Inicio</button>
+        <button data-view="route"><span aria-hidden="true">◇</span>Ruta</button>
+        <button data-view="practice"><span aria-hidden="true">◷</span>Práctica</button>
+        <button data-view="journal"><span aria-hidden="true">▤</span>Diario</button>
+      </nav>
+    </div>
+
+    <dialog id="profileDialog" class="sheet">
+      <form id="profileForm" method="dialog">
+        <div class="sheet-handle" aria-hidden="true"></div>
+        <div class="sheet-title">
+          <div><span class="eyebrow">Tu compañero</span><h2>Personaliza la aventura</h2></div>
+          <button type="button" data-action="close-profile" class="icon-button" aria-label="Cerrar">×</button>
+        </div>
+        <label>Nombre del perro<input id="dogName" name="dogName" maxlength="24" required placeholder="Ej. Bruno" /></label>
+        <label>Etapa<select id="dogStage" name="dogStage"><option value="Cachorro">Cachorro</option><option value="Adulto">Adulto</option><option value="Senior">Senior</option></select></label>
+        <label>Meta principal<select id="dogGoal" name="dogGoal"><option value="Paseos tranquilos">Paseos tranquilos</option><option value="Mejor convivencia">Mejor convivencia</option><option value="Responder al llamado">Responder al llamado</option><option value="Más calma en casa">Más calma en casa</option></select></label>
+        <button class="primary-button full" value="save">Guardar perfil</button>
+      </form>
+    </dialog>
+
+    <dialog id="installDialog" class="sheet compact-sheet">
+      <div class="sheet-handle" aria-hidden="true"></div>
+      <div class="sheet-title"><div><span class="eyebrow">Acceso rápido</span><h2>Instala Kandela</h2></div><button data-action="close-install" class="icon-button" aria-label="Cerrar">×</button></div>
+      <p id="installHelp">Añade esta aplicación a la pantalla de inicio desde el menú de tu navegador.</p>
+      <button id="installButton" class="primary-button full" hidden>Instalar aplicación</button>
+    </dialog>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="app.js" defer></script>
+  </body>
+</html>

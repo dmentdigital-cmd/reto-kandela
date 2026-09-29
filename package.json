@@ -1,0 +1,9 @@
+{
+  "name": "kandela-smartdogs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aplicación móvil progresiva basada en el ebook de Kandela.",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

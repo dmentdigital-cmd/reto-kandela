@@ -1,0 +1,13 @@
+{
+  "name": "Kandela por SmartDogs",
+  "short_name": "Kandela",
+  "description": "Guía práctica de convivencia y entrenamiento canino basada en el ebook de Kandela.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#FFF9F0",
+  "theme_color": "#7B0079",
+  "lang": "es",
+  "icons": [
+    { "src": "assets/icon-600.png", "sizes": "600x600", "type": "image/png", "purpose": "any" }
+  ]
+}
