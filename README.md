@@ -2,6 +2,10 @@
 
 Aplicación web progresiva, instalable en celular y basada en `e_book_kandela.md`.
 
+## Vista previa
+
+https://dmentdigital-cmd.github.io/reto-kandela/
+
 ## Probar localmente
 
 La PWA necesita un servidor local para activar el modo sin conexión:
