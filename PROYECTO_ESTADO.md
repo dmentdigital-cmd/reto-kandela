@@ -12,6 +12,7 @@
 - Se configuró Shorebird y se publicó la release Android `1.0.0+1`.
 - Se generó el APK arm64 de aproximadamente 17 MB.
 - El repositorio está publicado en [GitHub](https://github.com/dmentdigital-cmd/reto-kandela).
+- El APK también está incluido en GitHub: [Descargar app-release.apk](https://github.com/dmentdigital-cmd/reto-kandela/raw/refs/heads/main/app-release.apk).
 - La aplicación web está publicada en [GitHub Pages](https://dmentdigital-cmd.github.io/reto-kandela/).
 
 ## APK verificado en Google Drive
