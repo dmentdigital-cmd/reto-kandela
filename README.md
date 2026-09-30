@@ -17,6 +17,25 @@ npm start
 
 Abrir `http://127.0.0.1:4173`. No requiere instalar dependencias.
 
+## Proyecto APK con Shorebird
+
+La carpeta `mobile/` contiene el proyecto Flutter Android. Su shell carga la aplicación Kandela publicada y está preparada para Shorebird Code Push.
+
+Requisitos para generar la APK:
+
+- Java 17 (JDK)
+- Android SDK y Android SDK Platform Tools
+- Una cuenta de Shorebird autenticada
+
+Desde `mobile/`, después de instalar el entorno Android:
+
+```powershell
+shorebird init
+shorebird release android --artifact apk --target-platform android-arm64
+```
+
+Los cambios posteriores al código Dart se publican con `shorebird patch android`.
+
 ## Funciones
 
 - Ruta de ocho retos basada en el ebook.
